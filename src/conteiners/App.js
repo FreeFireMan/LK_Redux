@@ -5,8 +5,6 @@ import Header from '../components/Header/Header'
 import { BrowserRouter, Route,Link,Switch} from "react-router-dom";
 
 import {connect} from "react-redux"
-/*import User from "../components/user";
-import Year from "../components/Year";*/
 import {fetchData} from "../action/data"
 import Catalog from "../components/Catalog/Catalog";
 import Product from "../components/Product/Product";
@@ -26,11 +24,9 @@ class App extends React.Component {
             <Header/>
             <Switch>
                 <Route exact path="/:number" component={Product}/>
-
                 <Route path="/" render={(props) => (
                     <Catalog {...props} data={this.state} aletAppPost = {this.aletAppPost}/>
                 )}/>
-                {/* <Catalog tree_data={tree_data} prod_data={prod_data} isLoadingTree={isLoadingTree} isLoadingProd={isLoadingProd}/>*/}
             </Switch>
             <div>
                 {console.log(this.props.data)}
@@ -67,7 +63,7 @@ class App extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        data : state.data
+        data : state.fetchData.data
     }
 };
 const mapDispatchToProps = dispatch => {

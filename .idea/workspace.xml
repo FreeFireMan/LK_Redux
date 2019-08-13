@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="857ddb74-51b4-41f0-a942-01d860d143cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Header/logo-ch.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/logolego.svg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/reducerData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/action/actionYear.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/action/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/action/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Catalog/Catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Catalog/Catalog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Year.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/user.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/conteiners/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/conteiners/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/info.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/rootReducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +81,8 @@
       <option name="presentableId" value="Default" />
       <updated>1565683487607</updated>
       <workItem from="1565683489690" duration="10540000" />
-      <workItem from="1565725224504" duration="6092000" />
+      <workItem from="1565725224504" duration="6606000" />
+      <workItem from="1565733018235" duration="594000" />
     </task>
     <task id="LOCAL-00001" summary="first commit &#10;16:37 13.08.2019">
       <created>1565703466177</created>
@@ -103,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565703466177</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="home work &#10;0:36 14.08.2019">
+      <created>1565732207863</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565732207864</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,7 +109,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -123,6 +120,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first commit &#10;16:37 13.08.2019" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit &#10;16:37 13.08.2019" />
+    <MESSAGE value="home work &#10;0:36 14.08.2019" />
+    <option name="LAST_COMMIT_MESSAGE" value="home work &#10;0:36 14.08.2019" />
   </component>
 </project>
