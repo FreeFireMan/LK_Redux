@@ -5,8 +5,8 @@ import Header from '../components/Header/Header'
 import { BrowserRouter, Route,Link,Switch} from "react-router-dom";
 
 import {connect} from "react-redux"
-import User from "../components/user";
-import Year from "../components/Year";
+/*import User from "../components/user";
+import Year from "../components/Year";*/
 import setYearAction from "../action/actionYear"
 import Catalog from "../components/Catalog/Catalog";
 import Product from "../components/Product/Product";
@@ -61,18 +61,15 @@ class App extends React.Component {
     }
 }
 
-function mapStateProps(state) {
+const mapStateToProps = state => {
     return {
-        user: state.userInfo.user,
-        year: state.userInfo.year,
+
     }
 }
-function mapDispatchToProps(dispatch) {
+const mapDispatchToProps = dispatch => {
     return {
-        setYearFunction: year => {
-            dispatch(setYearAction(year))
-        }
+
     }
 }
 
-export default connect(mapStateProps,mapDispatchToProps)(App);
+export default connect(mapStateToProps,mapDispatchToProps)(App);
