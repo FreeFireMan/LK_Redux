@@ -1,6 +1,6 @@
 import {combineReducers} from "redux";
-import userInfo from "./info"
+import reducerData from "./reducerData"
 const  rootReducer = combineReducers({
-    userInfo
+    fetchData: reducerData
 })
 export default rootReducer

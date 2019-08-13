@@ -5,17 +5,20 @@ export function fetchDataSuccess(data) {
     }
 }
 export function fetchData(url) {
-    return (disptch) =>{
+    return (dispatch) =>{
         fetch("http://localhost:8080/api/catalog/")
             .then(response => {
                 if(!response.ok){
-                    throw new Error(response.statusText)
+                    throw new Error("MyErrorInFetch tree : ",response.statusText)
                 }
+
                 return response.json();
             })
-            .then(result => disptch(fetchDataSuccess(result)))
-            .catch(error => {
-                console.log("MyErrorInFetch tree : "+error)
-            })
+            .then(result =>{
+                ///console.log(result)
+                dispatch(fetchDataSuccess(result))
+                }
+            )
+
     }
 }

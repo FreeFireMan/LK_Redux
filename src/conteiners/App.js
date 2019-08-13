@@ -7,19 +7,20 @@ import { BrowserRouter, Route,Link,Switch} from "react-router-dom";
 import {connect} from "react-redux"
 /*import User from "../components/user";
 import Year from "../components/Year";*/
-import setYearAction from "../action/actionYear"
+import {fetchData} from "../action/data"
 import Catalog from "../components/Catalog/Catalog";
 import Product from "../components/Product/Product";
 
 class App extends React.Component {
 
+    componentDidMount() {
+        this.props.fetchDataUrl("http://localhost:8080/api/catalog/")
+    }
+
     render() {
 
         return (
-           {/* <div>
-                <User user={this.props.user}/>
-                <Year year={this.props.year} setYear={this.props.setYearFunction}/>
-            </div>*/},
+
         <div id="wrapper" className="container">
 
             <Header/>
@@ -31,6 +32,9 @@ class App extends React.Component {
                 )}/>
                 {/* <Catalog tree_data={tree_data} prod_data={prod_data} isLoadingTree={isLoadingTree} isLoadingProd={isLoadingProd}/>*/}
             </Switch>
+            <div>
+                {console.log(this.props.data)}
+            </div>
             <div id="footer">
                 <div className="footer-top row">
                     <div className="menu-footer col-sm-6 col-md-3">
@@ -63,13 +67,13 @@ class App extends React.Component {
 
 const mapStateToProps = state => {
     return {
-
+        data : state.data
     }
-}
+};
 const mapDispatchToProps = dispatch => {
     return {
-
-    }
-}
+        fetchDataUrl: url => dispatch(fetchData(url))
+    };
+};
 
 export default connect(mapStateToProps,mapDispatchToProps)(App);
